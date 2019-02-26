@@ -30,9 +30,16 @@
     </properties>
 
     <build>
-		<sourceDirectory>src</sourceDirectory>
-		<plugins>
-			<plugin>
+        <sourceDirectory>src</sourceDirectory>
+        <finalName>store-webapp</finalName>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.seedstack</groupId>
+                    <artifactId>seedstack-maven-plugin</artifactId>
+                    <version>2.7.0</version>
+                </plugin>
+		    <plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.1</version>
 				<configuration>
@@ -46,9 +53,38 @@
 				<configuration>
                                     <webXml>src\main\webapp\WEB-INF\web.xml</webXml>        
                          </configuration>
-			</plugin>
-		</plugins>
-	</build>
+			</plugin>    
+            </plugins>
+        </pluginManagement>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-failsafe-plugin</artifactId>
+                <version>2.18.1</version>
+                <executions>
+                    <execution>
+                        <id>integration-tests</id>
+                        <goals>
+                            <goal>integration-test</goal>
+                            <goal>verify</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.seedstack</groupId>
+                <artifactId>seedstack-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>build-capsule</id>
+                        <goals>
+                            <goal>package</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
 
     <dependencyManagement>
         <dependencies>
