@@ -4,12 +4,12 @@
     "name": "customers",
     "items": [
       {
-        "id": "robert.smith@email.com",
-        "firstName": "Robert",
-        "lastName": "SMITH",
-        "address": "7407 Beech Street Hollis, NY 11423",
-        "deliveryAddress": "7407 Beech Street Hollis, NY 11423",
-        "password": "robbie"
+        "id": "zippyops@gmail.com",
+        "firstName": "Sathish",
+        "lastName": "Kumar",
+        "address": "172-173,old mahabalipuram road Rajiv gandhi salai,chandrasekar avenue,T horaipakka Chennai Chennai TN 600097",
+        "deliveryAddress": "172-173,old mahabalipuram road Rajiv gandhi salai,chandrasekar avenue,T horaipakka Chennai Chennai TN 600097",
+        "password": "zippyops"
       }
     ]
   },
