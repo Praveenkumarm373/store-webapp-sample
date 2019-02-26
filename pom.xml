@@ -44,9 +44,8 @@
 				<artifactId>maven-war-plugin</artifactId>
 				<version>2.4</version>
 				<configuration>
-					<warSourceDirectory>WebContent</warSourceDirectory>
-					<failOnMissingWebXml>false</failOnMissingWebXml>
-				</configuration>
+                                    <webXml>src\main\webapp\WEB-INF\web.xml</webXml>        
+                         </configuration>
 			</plugin>
 		</plugins>
 	</build>
