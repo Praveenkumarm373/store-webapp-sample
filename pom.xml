@@ -38,22 +38,7 @@
                     <groupId>org.seedstack</groupId>
                     <artifactId>seedstack-maven-plugin</artifactId>
                     <version>2.7.0</version>
-                </plugin>
-		    <plugin>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.1</version>
-				<configuration>
-					<source>1.7</source>
-					<target>1.7</target>
-				</configuration>
-			</plugin>
-			<plugin>
-				<artifactId>maven-war-plugin</artifactId>
-				<version>2.4</version>
-				<configuration>
-                                    <webXml>src\main\webapp\WEB-INF\web.xml</webXml>        
-                         </configuration>
-			</plugin>    
+		    </plugin>
             </plugins>
         </pluginManagement>
         <plugins>
