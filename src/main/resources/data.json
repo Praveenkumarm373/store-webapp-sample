@@ -1,6 +1,6 @@
 [
   {
-    "group": "store",
+    "group": "Ops",
     "name": "customers",
     "items": [
       {
@@ -14,7 +14,7 @@
     ]
   },
   {
-    "group": "store",
+    "group": "Ops",
     "name": "categories",
     "items": [
       {
